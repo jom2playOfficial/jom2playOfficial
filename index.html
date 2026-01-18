@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>C8Asia Official</title>
+  <style>
+    :root{
+      --bg:#0a0b0f;
+      --card:#12141b;
+      --line:rgba(255,255,255,.10);
+      --text:#eaeaf2;
+      --muted:#a9a9b5;
+      --shadow:0 18px 45px rgba(0,0,0,.55);
+      --radius:20px;
+      --btn:rgba(255,255,255,.05);
+      --btn2:rgba(255,255,255,.02);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#1c1f22;
+      display:flex;
+      justify-content:center;
+      padding:22px 12px 44px;
+      color:var(--text);
+    }
+    /* 外层模拟手机 */
+    .phone{
+      width:100%;
+      max-width:430px;
+      background: radial-gradient(900px 600px at 50% -20%, rgba(92,120,255,.18), transparent 55%),
+                  linear-gradient(#07080b, var(--bg));
+      border-radius:28px;
+      box-shadow:var(--shadow);
+      border:1px solid rgba(255,255,255,.08);
+      padding:16px 14px 18px;
+      position:relative;
+    }
+
+    /* 顶部小按钮 */
+    .top-icons{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:8px;
+      opacity:.9;
+    }
+    .mini{
+      width:28px;height:28px;border-radius:50%;
+      border:1px solid rgba(255,255,255,.15);
+      background:rgba(255,255,255,.05);
+      display:flex;align-items:center;justify-content:center;
+      font-size:14px;
+    }
+
+    /* 头像区 */
+    .profile{
+      text-align:center;
+      padding:10px 8px 6px;
+    }
+    .logo{
+      width:66px;height:66px;border-radius:50%;
+      margin:4px auto 10px;
+      overflow:hidden;
+      background:#000;
+      border:1px solid rgba(255,255,255,.16);
+    }
+    .logo img{width:100%;height:100%;object-fit:cover}
+    .name{font-weight:800;font-size:20px;margin:0 0 6px}
+    .bio{
+      font-size:12px;line-height:1.35;
+      color:var(--muted);
+      margin:0;
+    }
+
+    /* 按钮列表 */
+    .list{margin-top:12px}
+    .item{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:12px 12px;
+      margin:10px 0;
+      border-radius:14px;
+      background:linear-gradient(180deg, var(--btn), var(--btn2));
+      border:1px solid var(--line);
+      text-decoration:none;
+      color:var(--text);
+      position:relative;
+    }
+    .item:hover{border-color:rgba(255,255,255,.20)}
+    .leftIcon{
+      width:36px;height:36px;border-radius:10px;
+      display:flex;align-items:center;justify-content:center;
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.12);
+      overflow:hidden;
+      flex:0 0 36px;
+    }
+    .leftIcon img{width:22px;height:22px;filter:invert(1)}
+    .label{font-size:13px;font-weight:700}
+    .dots{
+      position:absolute;
+      right:12px;
+      top:50%;
+      transform:translateY(-50%);
+      color:rgba(255,255,255,.55);
+      letter-spacing:2px;
+      font-weight:900;
+    }
+
+    /* Banner */
+    .banner{
+      margin:14px 0;
+      border-radius:18px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.12);
+      background:rgba(255,255,255,.03);
+      box-shadow:0 16px 40px rgba(0,0,0,.35);
+    }
+    .banner img{width:100%;display:block;object-fit:cover}
+
+    .bottomSpace{height:8px}
+  </style>
+</head>
+<body>
+  <div class="phone">
+
+    <div class="top-icons">
+      <div class="mini">✻</div>
+      <div class="mini">⌁</div>
+    </div>
+
+    <div class="profile">
+      <div class="logo">
+        <img src="logo.png" alt="logo">
+      </div>
+
+      <h1 class="name">C8Asia Official</h1>
+      <p class="bio">
+        💎 Platform Paling Power di Malaysia! 💎 (WLC BNS 150%)<br>
+        150% (MID Night) 9:10 | 12:5am (SETIAP HARI IN 30 FREE RM5)
+      </p>
+    </div>
+
+    <div class="list">
+
+      <a class="item" href="go-telegram.html">
+        <span class="leftIcon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="tg">
+        </span>
+        <span class="label">Telegram Support</span>
+        <span class="dots">···</span>
+      </a>
+
+      <a class="item" href="go-support.html">
+        <span class="leftIcon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="wa">
+        </span>
+        <span class="label">WhatsApp Support (MIYA)</span>
+        <span class="dots">···</span>
+      </a>
+
+      <a class="item" href="go-support.html">
+        <span class="leftIcon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="wa">
+        </span>
+        <span class="label">Complaint Hotline (WhatsApp)</span>
+        <span class="dots">···</span>
+      </a>
+
+      <a class="item" href="go-telegram.html">
+        <span class="leftIcon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="tg">
+        </span>
+        <span class="label">Jom2play Bukti / Updates Channel</span>
+        <span class="dots">···</span>
+      </a>
+
+      <div class="banner">
+        <img src="banner1.png" alt="banner1">
+      </div>
+
+      <a class="item" href="go-support.html">
+        <span class="leftIcon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlechrome.svg" alt="web">
+        </span>
+        <span class="label">Jom2play Rewards Info (Updated)</span>
+        <span class="dots">···</span>
+      </a>
+
+      <div class="banner">
+        <img src="banner2.png" alt="banner2">
+      </div>
+
+      <a class="item" href="go-support.html">
+        <span class="leftIcon">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/rocket.svg" alt="go">
+        </span>
+        <span class="label">Register / Get Started</span>
+        <span class="dots">···</span>
+      </a>
+
+      <div class="bottomSpace"></div>
+    </div>
+  </div>
+</body>
+</html>
