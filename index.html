@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Official Page</title>
+  <style>
+    :root{
+      --bg:#0a0b0e;
+      --line:rgba(255,255,255,.10);
+      --text:#e9e9ef;
+      --muted:#a7a7b3;
+      --shadow: 0 16px 40px rgba(0,0,0,.55);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(1200px 700px at 50% -10%, rgba(88,110,255,.16), transparent 55%),
+                  linear-gradient(#07080b, var(--bg));
+      color:var(--text);
+      display:flex;
+      justify-content:center;
+      padding:18px 12px 44px;
+    }
+    .wrap{width:100%;max-width:430px;}
+    .phone{
+      border-radius:26px;
+      padding:14px;
+      background: rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.08);
+      box-shadow:var(--shadow);
+    }
+    .top{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:18px 16px 14px;
+      text-align:center;
+    }
+    .logo{
+      width:70px;height:70px;border-radius:50%;
+      margin:0 auto 10px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.18);
+      background:#000;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .logo span{font-weight:900;letter-spacing:.8px}
+    .name{font-size:20px;font-weight:800;margin:4px 0 6px}
+    .bio{font-size:12px;color:var(--muted);line-height:1.4;margin:0}
+    .list{margin-top:14px}
+    .btn{
+      display:flex;align-items:center;gap:12px;
+      text-decoration:none;color:var(--text);
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:12px 12px;
+      margin:10px 0;
+      transition:transform .08s ease,border-color .1s ease,background .1s ease;
+    }
+    .btn:hover{
+      transform: translateY(-1px);
+      border-color: rgba(255,255,255,.18);
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+    }
+    .icon{
+      width:40px;height:40px;border-radius:12px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      display:flex;align-items:center;justify-content:center;
+      overflow:hidden;flex:0 0 40px;
+      font-weight:900;
+    }
+    .txt{display:flex;flex-direction:column;line-height:1.2}
+    .title{font-size:14px;font-weight:800}
+    .sub{font-size:12px;color:var(--muted)}
+    .banner{
+      margin:14px 0;
+      border-radius:20px;
+      overflow:hidden;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      box-shadow: 0 12px 26px rgba(0,0,0,.35);
+      padding:18px;
+      text-align:center;
+      color:var(--muted);
+      font-size:12px;
+    }
+    .foot{text-align:center;color:#8a8a96;font-size:12px;margin-top:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="phone">
+
+      <!-- 顶部资料 -->
+      <div class="top">
+        <div class="logo"><span>LOGO</span></div>
+        <div class="name">C8Asia Official</div>
+        <p class="bio">Please choose an option below to continue.</p>
+      </div>
+
+      <!-- 按钮 -->
+      <div class="list">
+
+        <a class="btn" href="go-telegram.html">
+          <span class="icon">TG</span>
+          <span class="txt">
+            <span class="title">Telegram Support</span>
+            <span class="sub">Fast response</span>
+          </span>
+        </a>
+
+        <a class="btn" href="go-support.html">
+          <span class="icon">WA</span>
+          <span class="txt">
+            <span class="title">WhatsApp Support</span>
+            <span class="sub">Customer service</span>
+          </span>
+        </a>
+
+        <a class="btn" href="go-support.html">
+          <span class="icon">WA</span>
+          <span class="txt">
+            <span class="title">Help Desk</span>
+            <span class="sub">Complaint department</span>
+          </span>
+        </a>
+
+        <div class="banner">
+          Banner Image (we will add later)
+        </div>
+
+        <a class="btn" href="go-support.html">
+          <span class="icon">GO</span>
+          <span class="txt">
+            <span class="title">Register / Get Started</span>
+            <span class="sub">Continue now</span>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="foot">© Official Page</div>
+    </div>
+  </div>
+</body>
+</html>
